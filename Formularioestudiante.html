@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css" media="screen">
+</head>
+<body> 
+    <h1 style="text-align:justify ;">Formulario estudiante</h1>
+<form method="post" action="tratamiento.php">
+    <p style="text-align:justify ;" class="destacado"> 
+        <label for="username">Nombre del Usuario</label>
+        <input type="text" name="username" id="username" size="30" />
+
+        <br/>
+
+        <label for="pass">Contraseña</label>
+        <input type="password" name="pass" id="pass" maxlength="4" />
+        <br/>
+
+        <label for="realizado">Realizado</label>
+        <input type="checkbox" name="realizado" id="realizado" />
+
+        <br/>  <!--Así se añade un comentario en Visual Code-->
+        <label for="realizado">Femenino</label>
+        <input type="radio" name="realizado" id="realizado" />
+        <br/>
+        <label for="realizado">Masculino</label>
+        <input type="radio" name="realizado" id="realizado" />
+        <br/>
+
+        <label for="país">Seleccione desde que país rellena el formulario</label>
+        <select name="PAÍS" id="país">
+            <option value="Argentina">Argentina</option>
+            <option value="Brasil">Brasil</option>
+            <option value="Uruguay">Uruguay</option>
+        </select>
+        <br/>
+        <label for="fecha">Fecha de Ingreso</label>
+        <input type="date" name="fecha" id="fecha" size="30" />
+        <br/>
+
+        <label for="observaciones">Agregue algún comentario</label>
+        <textarea name="observaciones" id="observaciones" rows="10" cols="50">
+            Añada el comentario que crea conveniente
+        </textarea>
+       
+    </p>
+</form>
+</body>
+</html>
